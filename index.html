@@ -1,49 +1,149 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-devide-width,initial=1.0">
-    <title>project</title>
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <script src="https://kit.fontawesome.com/12d695f553.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/12d695f553.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <div class="main">
+  <div class="all">
     <nav class="navbar">
-        <div class="logo">
-            <i class="fa-solid fa-ice-cream" style="color:white;"></i>
-            <a>ICE CREAM</a>
-        </div>
-        <ul class="nav-links">
-            <li><a>Home</a></li>
-            <li><a href="./Menu.html" class="index">Menu</a></li>
-            <li><a href="./contact.html" class="index">Contact</a></li>
-           
-            <li><a href="./order.html" class="index"><i class="fa-solid fa-cart-shopping" class="icon"style="color: white;"></i>  Order</a></li>
-        </ul>
+      <div class="logo"><i class="fa-solid fa-ice-cream"></i><span> </span>Ice Cream</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Order</a></li>
+      </ul>
+      <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
-    <div class="container">
-        <img src="black-brick-wall-surface-texture.jpg" class="img">
+    <div class="box">
+      <h1 class="head">Ice Cream Porlour</h1>
+      <p class="para">“Welcome to Sweet Scoops, where every scoop is made with love and the finest ingredients. From
+        classic favorites to exciting new flavors, we serve creamy delights that turn every bite into happiness. Step in
+        and taste the joy of pure indulgence.”</p>
 
-        <h1 class="head"><br>Real Ice Cream For</br>
-          Real Ice Cream Lovers</br>
-        </h1>
-        
-        <p class="para"><br>Welcome to frozone feast , where the world of frozen delight comes </br>
-            alive! Get ready to embark on a mouthwatering journey throught a</br>
-            virtual ice cream pradise.. Whether you're craving cozy in-store treart<br>
-            delivery to your doorstep ,or a ice cream custom experiance on your next</br>
-            events, we're here to serve you the sweet moments , wherever yor are..
-        <p>
+      <!-- <div class="image"> -->
+      <img src="./purple.png" class="img">
 
 
-            <img src="./delicious-ice-cream-with-berries-removebg-preview.png"class="img2">
-            <img src="./ice3.png" class="img3">
+
+
     </div>
+  </div>
+  </div>
 
 
 
+  <!-- //menu -->
+ <div class="main-menu">
+  <header>
+    <h1>Cool Scoops Ice Cream Menu</h1>
+    <p>Delicious flavors, daily fresh!</p>
+  </header>
+  
+  <main class="menu-container">
+    <div class="menu-item">
+      <img src="./vannila.jpg" alt="Vanilla Ice Cream">
+      <h2>Vanilla</h2>
+      <p>Classic creamy vanilla made with real beans.</p>
+      <span class="price">₹80</span>
+    </div>
+    <div class="menu-item">
+      <img src="./chocalate.jpg" alt="Chocolate Ice Cream">
+      <h2>Chocolate</h2>
+      <p>Rich Belgian chocolate, a favorite for everyone.</p>
+      <span class="price">₹90</span>
+    </div>
+    <div class="menu-item">
+      <img src="./strawberry.jpg" alt="Strawberry Ice Cream">
+      <h2>Strawberry</h2>
+      <p>Fresh strawberries in every scoop.</p>
+      <span class="price">₹85</span>
+    </div>
+    <!-- <img src="./background.jpg" class="main-menu"> -->
+    </div>
+    <!-- Add more menu items as needed -->
+
+  </main>
+</div>
+</div>
+  <!-- contact page -->
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p>Questions, feedback, or just want to say hello? We're all ears (and scoops)!</p>
+    <div class="contact-container">
+      <form class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@email.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Type your message..."></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h2>Visit or Contact Us</h2>
+        <p><i class="fas fa-map-marker-alt" style="color:#fe7cb3; margin-right:8px;"></i><strong>Address:</strong> 123
+          Sundae Street, Sweet City</p>
+        <p><i class="fas fa-phone-alt" style="color:#fe7cb3; margin-right:8px;"></i><strong>Phone:</strong> +91 95555
+          55555</p>
+        <p><i class="fas fa-envelope" style="color:#fe7cb3; margin-right:8px;"></i><strong>Email:</strong>
+          hello@coolscoops.com</p>
+        <div class="hours">
+          <strong><i class="fas fa-clock" style="color:#fe7cb3; margin-right:6px;"></i>Opening Hours:</strong>
+          <p>Mon-Sat: 10:00AM – 9:00PM</p>
+          <p>Sunday: 11:00AM – 6:00PM</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+
+
+  <!-- order 2 -->
+<div class="main-order">
+<div class="order-container">
+  <svg class="ice-cream-icon" xmlns="http://www.w3.org/2000/svg" fill="#ff4b7d" viewBox="0 0 64 64"><path d="M32 2C18 2 10 16 10 28c0 7 5 10 5 17h12c0-7 5-10 5-17 0-12-8-26-10-26z"/></svg>
+
+  <h1>Order Your Ice Cream</h1>
+
+  <label for="flavor">Choose Flavor</label>
+  <select id="flavor" name="flavor" required>
+    <option value="" disabled selected>Select flavor</option>
+    <option value="vanilla">Vanilla</option>
+    <option value="chocolate">Chocolate</option>
+    <option value="strawberry">Strawberry</option>
+    <option value="mango">Mango</option>
+    <option value="mint">Mint</option>
+  </select>
+
+  <label for="size">Choose Size</label>
+  <select id="size" name="size" required>
+    <option value="" disabled selected>Select size</option>
+    <option value="small">Small - 1 Scoop</option>
+    <option value="medium">Medium - 2 Scoops</option>
+    <option value="large">Large - 3 Scoops</option>
+  </select>
+
+  <label for="quantity">Quantity</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required />
+
+  <button type="submit">Add to Cart</button>
+</div>
+</div>
 </body>
-
 </html>
